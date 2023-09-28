@@ -44,7 +44,7 @@ const Formulario = ({mostrarMensaje}) => {
     return (
         <>
             <p>O usa tu Email para registrarte</p>
-            <form onSubmit={validarForm}>
+            <form onSubmit={validarForm} className="text-start">
                 <div className="form-group mb-3">
                     <label>Nombre</label>
                     <input
