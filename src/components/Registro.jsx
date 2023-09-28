@@ -11,7 +11,7 @@ const Registro = ({validacion,mensaje}) => {
                 <SocialButton
                     rrss1 = 'facebook'
                     rrss2 = 'github'
-                    rrss3 = 'linkedin'
+                    rrss3 = 'linkedin-in'
                 />
                 <Formulario mostrarMensaje={validacion}/>
                 <Alert 
