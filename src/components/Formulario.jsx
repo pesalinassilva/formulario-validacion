@@ -86,7 +86,7 @@ const Formulario = ({mostrarMensaje}) => {
                     ></input>
                 </div>
                 <div className="d-grid">
-                    <button className="btn btn-success" type="button">Registrarse</button>
+                    <button className="btn btn-success" type="submit">Registrarse</button>
                 </div>
             </form>
         </>

@@ -7,6 +7,7 @@ const Registro = ({validacion,mensaje}) => {
     return(
         <>
             <div className="formulario">
+            <h1 className="fs-1">Crea una cuenta</h1>
             <SocialButton
                 rrss1 = 'facebook'
                 rrss2 = 'github'
