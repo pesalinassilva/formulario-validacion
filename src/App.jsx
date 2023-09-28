@@ -15,10 +15,10 @@ function App() {
 
   return (
     <>
-    <Registro
-      validacion={mostrarValidacion}
-      mensaje={mensaje}
-    />
+      <Registro
+        validacion={mostrarValidacion}
+        mensaje={mensaje}
+      />
     </>
   )
 }

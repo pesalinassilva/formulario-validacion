@@ -68,18 +68,6 @@ button:focus-visible {
   }
 }
 
-.rrss{
-  border: 1px solid;
-  border-radius: 50%;
-}
-
 .fa-brands{
   height: 55px;
-  margin: 20px;
-}
-
-.formulario{
-  padding: 50px;
-  border: 2px solid;
-  border-radius: 10px;
 }
