@@ -4,26 +4,26 @@ const Formulario = ({mostrarMensaje}) => {
     //Declaración de estados de cada campo del formulario.
     const [nombre, setNombre] = useState('')
     const [email, setEmail] = useState('')
-    const [contrasena, setContrasena] = useState('')
-    const [confContrasena, setConfContrasena] = useState('')
+    const [contraseña, setContraseña] = useState('')
+    const [confContraseña, setConfContraseña] = useState('')
 
     //función para validar formulario si es que estan llenos todos los campos, validación de correo y si contraseñas son iguales.
     const validarForm = (e) => {
         e.preventDefault()
-        if (nombre == '' || email == '' || contrasena == '' || confContrasena == ''){
+        if (nombre == '' || email == '' || contraseña == '' || confContraseña == ''){
             mostrarMensaje({
                 msg:'Debes llenar todos los campos',
                 color:'primary'
             })
             return
-        }else if (email !== '' && contrasena !== '' && confContrasena !== ''){
+        }else if (email !== '' && contraseña !== '' && confContraseña !== ''){
             if (!/^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/.test(email)) {
                 mostrarMensaje({
                     msg:'El correo no es válido',
                     color:'danger'
                 })
                 return
-            }else if(contrasena !== confContrasena){
+            }else if(contraseña !== confContraseña){
                 mostrarMensaje({
                     msg:'Las contraseñas no coinciden',
                     color:'danger'
@@ -37,8 +37,8 @@ const Formulario = ({mostrarMensaje}) => {
         })
         setNombre('')
         setEmail('')
-        setContrasena('')
-        setConfContrasena('')
+        setContraseña('')
+        setConfContraseña('')
     }
 
     return (
@@ -69,20 +69,20 @@ const Formulario = ({mostrarMensaje}) => {
                     <label>Contraseña</label>
                     <input
                     className="form-control"
-                    name="contrasena"
+                    name="contraseña"
                     type="password"
-                    onChange={(e) => setContrasena(e.target.value)}
-                    value={contrasena}
+                    onChange={(e) => setContraseña(e.target.value)}
+                    value={contraseña}
                     ></input>
                 </div>
                 <div className="form-group mb-3">
                     <label>Confirmar Contraseña</label>
                     <input
                     className="form-control"
-                    name="conf-contrasena"
+                    name="conf-contraseña"
                     type="password"
-                    onChange={(e) => setConfContrasena(e.target.value)}
-                    value={confContrasena}
+                    onChange={(e) => setConfContraseña(e.target.value)}
+                    value={confContraseña}
                     ></input>
                 </div>
                 <div className="d-grid">
